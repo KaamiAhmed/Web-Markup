@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
     <title>RefugeeResource Guide</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a class="logo" href="home.html">RefugeeResource Guide</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="asylum.html">Asylum</a></li>
+                <li><a href="procedure.html">Procedure</a></li>
+                <li><a href="familyreunion.html">Family Reunion</a></li>
+                <li><a href="integration.html">Integration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <legend><h1>Contact Us</h1></legend>
+    <form action="#" class="form">
+            <section>
+                <label for="gender">Gender</label>
+                <input id="gender" name="gender" type="radio">Male
+                <input id="gender" name="gender" type="radio">Female
+                <input id="gender" name="gender" type="radio">Neutral
+                <input id="gender" name="gender" type="radio">Prefer not to say
+            </section>
+            <section>
+                <label for="name">Name</label>
+                <input placeholder="Your name" id="name" name="name" type="text" required>
+            </section>
+            <section>
+                <label for="email">Email</label>
+                <input placeholder="Your Email" id="email" name="email" type="email" required>
+                </section>
+                <section>
+                <label for="phone">Phone</label>
+                <input placeholder="Your Phone Number" id="phone" name="phone" type="text">
+            </section>
+            <section>
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Your message goes here..." required></textarea>
+                </section>
+                <input type="submit" name="Submit">
+            
+    </form>
+    </section>
 </body>
 </html>
