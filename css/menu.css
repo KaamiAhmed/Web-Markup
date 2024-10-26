@@ -18,12 +18,12 @@ header {
   }
 
   nav ul li:first-child{
-    margin-left:-292px;
+    margin-left:-26%;
   }
 
   nav ul{
     text-align: center;
-    margin-left: 450px;
+    margin-left: 30%;
   }
   
   /* list style none remove all the styles such as radios from the list*/
@@ -50,14 +50,43 @@ header {
     padding:0 15px;
   }
 
-  .cookie{
-    position:fixed;
-    bottom:0;
-    width:80%;
-    height:50px;
-    text-align: center;
-    line-height: 50px;
-    background-color: #333;
-    color:white;
-    z-index:9999;
+  @media (max-width: 1000px){
+    header{
+      height:300px;
+    }
+
+    nav ul li{
+      border-top:1px solid gray;
+      float:none;
+      margin:0;
+    }
+
+    nav ul{
+      margin:0;
+    }
+
+    nav ul li:first-child{
+      margin-right:180px;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width:768px){
+    header{
+      position: static;
+    }
+  }
+
+  @media (max-width:700px){
+    nav ul li a.logo{
+      position:sticky;
+      top:0;
+      left:10px;
+    }
+  }
+
+  @media (max-width:468px){
+    nav ul li:first-child{
+      font-size: 1rem;
+    }
   }

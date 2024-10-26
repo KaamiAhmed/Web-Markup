@@ -4,6 +4,10 @@
     margin:0;
 }
 
+nav ul{
+    margin-left: 37%;
+  }
+
 .contact-form{
     display: flex;
     justify-content: center;
@@ -107,7 +111,7 @@ footer{
   footer ul{
     display: flex;
     width:55%;
-    margin-left: 12%;
+    margin-left: 22%;
     justify-content: space-between;
   }
 
@@ -129,8 +133,14 @@ footer{
     font-weight: bold;
   }
 
+  @media (max-width:1000px){
+    nav ul{
+        margin-left:0;
+      }
+  }
   
   @media (max-width:768px){
+
    form{
     width:80%;
     padding:15px;
@@ -153,6 +163,10 @@ footer{
     width:100%;
    }
 
+   footer ul{
+    width:77%;
+    margin-left:10%;
+    }
   }
 
   @media (max-width:568px){
@@ -183,4 +197,14 @@ footer{
      padding:8px;
     }
     
+    footer ul{
+        width:90%;
+        margin-left:3%;
+        font-size:14px;
+    }
+
+    footer a.contactbtn{
+        padding:8px 16px;
+        border-radius: 8px;
+      }
    }
