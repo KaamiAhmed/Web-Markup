@@ -53,7 +53,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea{
     resize:none;
 }
 
-input[type="radio"], #gender {  
+input[type="radio"], .main-gender {  
     margin-right: 50px;
 }
 
@@ -66,12 +66,12 @@ input:focus, textarea:focus{
     outline:none;
 }
 
-#gender{
+.main-gender{
     margin-bottom: 20px;
 }
 
 input[type="radio"] {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     margin-left:8px;
     cursor:pointer;
 }
@@ -179,7 +179,7 @@ footer{
      width:100%;
     }
 
-    input[type="radio"], #gender {  
+    input[type="radio"], .main-gender {  
         margin-right: 20px;
     }
     
@@ -190,7 +190,7 @@ footer{
     }
 
     input[type="radio"] {
-        margin-bottom: 19px;
+        margin-bottom: 24px;
     }
 
     input[type="submit"]{
