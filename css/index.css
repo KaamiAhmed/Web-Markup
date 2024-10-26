@@ -6,7 +6,6 @@ body{
 
 p{
   font-family: Poppins, sans-serif;
-
 }
 
 h1, h2, h3{
@@ -199,5 +198,14 @@ h1, h2, h3{
     footer a.contactbtn{
       padding:8px 16px;
       border-radius: 8px;
+    }
+  }
+
+  @media (max-width:550px){
+    .cookie{
+      font-size: 14px;
+      width:200px;
+      height:80px;
+      line-height:20px;
     }
   }

@@ -57,6 +57,7 @@ input[type="radio"], .main-gender {
     margin-right: 50px;
 }
 
+
 input:hover, textarea:hover{
     border-color: #ff9914;
 }
@@ -71,13 +72,14 @@ input:focus, textarea:focus{
 }
 
 input[type="radio"] {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
     margin-left:8px;
     cursor:pointer;
 }
 
 .gender{
     cursor: pointer;
+    margin-top:3px;
 }
 
 form section{
@@ -159,6 +161,10 @@ footer{
     padding:8px;
    }
 
+   input[type="radio"] {
+    margin-bottom: 18px;
+    }
+
    input[type="submit"]{
     width:100%;
    }
@@ -190,7 +196,7 @@ footer{
     }
 
     input[type="radio"] {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     input[type="submit"]{
@@ -207,4 +213,10 @@ footer{
         padding:8px 16px;
         border-radius: 8px;
       }
+   }
+
+   @media (max-width:360px){
+    form{
+        width:100%;
+    }
    }

@@ -90,3 +90,9 @@ header {
       font-size: 1rem;
     }
   }
+
+  @media (max-width:380px){
+    nav ul li:first-child{
+    margin-right:155px;
+    }
+  }
