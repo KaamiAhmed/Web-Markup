@@ -2,4 +2,4 @@ Student name: Kamran Ahmed
 Student number: 736616
 Student class: HAIT24FT1A
 GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+GitHub Pages URL: https://kaamiahmed.github.io/Web-Markup/
