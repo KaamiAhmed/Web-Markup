@@ -22,11 +22,11 @@ h1, h2, h3{
     position:relative;
   }
 
-  /*.banner h1, .banner p, .banner button*/.sub-banner{
+  .sub-banner{
     position:absolute;
     color:white;
     left:11%;/*170px*/
-    top:80px;
+    top:15%;
   }
 
   .banner p{
@@ -36,23 +36,22 @@ h1, h2, h3{
   }
 
   .banner h1{
-    /*top:80px;*/
-    font-size: 50px;
+    font-size: 3rem;
   }
 
   .banner button{
-   /* top:270px;*/
     padding:10px 52px;
     background-color: #2274A5;
     font-size: 16px;
     border:none;
     border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .banner button:hover{
     background-color: #FF9914;
     color:black;
-    font-weight: bold;
     transition:0.2s ease-in;
     cursor: pointer;
   }
@@ -65,24 +64,23 @@ h1, h2, h3{
 
   .blocks{
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin:20px;
     gap:20px;
-    color:white;
     font-size:14px;
   }
 
   .blocks h1{
-    font-size:2.5rem;
+    font-size:1.8rem;
     text-align: center;
     margin-top:10px;
     margin-bottom:5px;
   }
 
   .blocks p{
-    padding:0 15px;
+    padding:0 15px 40px 15px;
     text-align: center;
-    margin-bottom: 40px;
   }
 
   .blocks i{
@@ -92,24 +90,15 @@ h1, h2, h3{
     margin-top:50px;
   }
 
-  .block1{
+  .blocks a{
     background-color: #2274A5;
+    text-decoration: none;
+    color:white;
     width:19%;
   }
 
-  .block2{
-    background-color: #2274A5;
-    width:19%;
-  }
-
-  .block3{
-    background-color: #2274A5;
-    width:19%;
-  }
-
-  .block4{
-    background-color: #2274A5;
-    width:19%;
+  .blocks a:hover{
+    background-color: #1d6691;
   }
   
   footer{
@@ -139,24 +128,35 @@ h1, h2, h3{
   }
 
   footer a.contactbtn:hover{
-    background-color: orange;
+    background-color: #ff9914;
     color:black;
     font-weight: bold;
   }
+
+  .cookie{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #333;
+    color:white;
+    z-index:9999;
+  }
+
+  .cookie button{
+    cursor: pointer;
+  }
+
 
   @media (max-width:768px){
        .blocks{ 
         flex-direction: column;
        }
 
-       .block1, .block2, .block3, .block4{
+       .blocks a{
          width:100%;
       }
     
-  }
-
-  @media (max-width:1100px){
-    .blocks h1{
-      font-size: 1.5rem;
-    }
   }

@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamran Ahmed">
+    <meta name="description" content="If you are a new asylum seeker to the Netherlands, you might face problems due to lack of information about how to apply for asylum in the Netherlands, where to go and how would the whole procedure of your application be dealt. Moreover, you do need to know where you would live during this process and which basic needs you would be provided with. what to do when your application is approved, how to apply for family reunion, municipality(gemeente) assignment and the integration criteria.
+    “RefugeeResource Guide” can guide you through this whole procedure and can provide you with a clear pathway answering all these questions because taking a wrong step could cause big trouble for the refugees.">
+    <meta name="keywords" content="Asylum seekers, Immigration, refugees, family reunion, integration">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
-    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>RefugeeResource Guide</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a class="logo" href="home.html">RefugeeResource Guide</a></li>
-                <li><a class="active" href="home.html">Home</a></li>
+                <li><a class="logo" href="Index.html">RefugeeResource Guide</a></li>
+                <li><a class="active" href="Index.html">Home</a></li>
                 <li><a href="asylum.html">Asylum</a></li>
                 <li><a href="procedure.html">Procedure</a></li>
                 <li><a href="familyreunion.html">Family Reunion</a></li>
@@ -34,6 +39,7 @@
         <img src="images/going.jpg">
     </section>
     <section class="blocks">
+        <a href="asylum.html">
         <section class="block1">
             <i class="fa-solid fa-pen-to-square"></i>
             <h1>
@@ -41,22 +47,28 @@
             </h1>
             <p>You can be granted asylum in the Netherlands if you need protection. You must then meet the conditions...</p>
         </section>
+        </a>
+        <a href="procedure.html">
         <section class="block2">
             <i class="fa-solid fa-file-export"></i>
             <h1>
                 Procedure
             </h1>
-            <p>How much time it will take to process your application, where do you live during that time...
+            <p>How much time it will take to process your application, where do you live during that time and what if your application is rejected...
             </p>
         </section>
+        </a>
+        <a href="familyreunion.html">
         <section class="block3">
             <i class="fa-solid fa-users"></i>
             <h1>
                 Family Reunion
             </h1>
-            <p>Have you been granted residence permit? Next step is to apply for family reunion...
+            <p>Have you been granted residence permit? Next step is to apply for family reunion. You can apply for family reunion for...
             </p>
         </section>
+        </a>
+        <a href="integration.html">
         <section class="block4">
             <i class="fa-solid fa-book"></i>
             <h1>
@@ -65,6 +77,7 @@
             <p>The Dutch government wants everyone who lives in the Netherlands to be able to participate in Dutch society...
             </p>
         </section>
+        </a>
     </section>
     <footer>
         <ul>
@@ -73,5 +86,9 @@
         </ul>
     </footer>
    
+    <p class="cookie">
+        We use cookies to improve your experience on our website.
+        <button onclick="document.querySelector('.cookie').style.display='none'">Got it!</button>
+    </p>
 </body>
 </html>

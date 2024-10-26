@@ -11,9 +11,8 @@ header {
     z-index: 999;
     height: 50px;
     background: #db1b7c;
-    
   }
-
+  
   nav{
     width:100%;
   }
@@ -24,7 +23,7 @@ header {
 
   nav ul{
     text-align: center;
-    margin-left: 30%;
+    margin-left: 450px;
   }
   
   /* list style none remove all the styles such as radios from the list*/
@@ -36,7 +35,7 @@ header {
   }
 
   nav ul li a:hover, .active{
-    border-bottom: 5px solid orange;
+    border-bottom: 5px solid #ff9914;
   }
 
   a.logo:hover{
@@ -51,8 +50,14 @@ header {
     padding:0 15px;
   }
 
-  @media (max-width:768px){
-    nav ul{
-      margin-left:450px;
-    }
+  .cookie{
+    position:fixed;
+    bottom:0;
+    width:80%;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #333;
+    color:white;
+    z-index:9999;
   }

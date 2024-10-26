@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamran Ahmed">
+    <meta name="description" content="If you are a new asylum seeker to the Netherlands, you might face problems due to lack of information about how to apply for asylum in the Netherlands, where to go and how would the whole procedure of your application be dealt. Moreover, you do need to know where you would live during this process and which basic needs you would be provided with. what to do when your application is approved, how to apply for family reunion, municipality(gemeente) assignment and the integration criteria.
+    “RefugeeResource Guide” can guide you through this whole procedure and can provide you with a clear pathway answering all these questions because taking a wrong step could cause big trouble for the refugees.">
+    <meta name="keywords" content="Asylum seekers, Immigration, refugees, family reunion, integration">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>RefugeeResource Guide</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a class="logo" href="home.html">RefugeeResource Guide</a></li>
-                <li><a href="home.html">Home</a></li>
+                <li><a class="logo" href="Index.html">RefugeeResource Guide</a></li>
+                <li><a href="Index.html">Home</a></li>
                 <li><a href="asylum.html">Asylum</a></li>
                 <li><a href="procedure.html">Procedure</a></li>
                 <li><a href="familyreunion.html">Family Reunion</a></li>
@@ -21,35 +26,45 @@
             </ul>
         </nav>
     </header>
-    <section class="container">
-        <legend><h1>Contact Us</h1></legend>
+    <section class="contact-form">
     <form action="#" class="form">
+        <fieldset>
+            <legend><h1>Contact Us</h1></legend>
             <section>
-                <label for="gender">Gender</label>
-                <input id="gender" name="gender" type="radio">Male
-                <input id="gender" name="gender" type="radio">Female
-                <input id="gender" name="gender" type="radio">Neutral
-                <input id="gender" name="gender" type="radio">Prefer not to say
+                <label for="gender" id="gender">Gender:</label>
+                
+                <label for="male" class="gender">Male</label>
+                <input id="male" name="gender" type="radio" value="male" required>
+                
+                <label for="female" class="gender">Female</label>
+                <input id="female" name="gender" type="radio" value="female">
+                
+                <label for="other" class="gender">Other</label>
+                <input id="other" name="gender" type="radio" value="other">
             </section>
-            <section>
+            
                 <label for="name">Name</label>
                 <input placeholder="Your name" id="name" name="name" type="text" required>
-            </section>
-            <section>
-                <label for="email">Email</label>
-                <input placeholder="Your Email" id="email" name="email" type="email" required>
-                </section>
-                <section>
-                <label for="phone">Phone</label>
-                <input placeholder="Your Phone Number" id="phone" name="phone" type="text">
-            </section>
-            <section>
-                <label for="message">Your Message</label>
-                <textarea id="message" placeholder="Your message goes here..." required></textarea>
-                </section>
-                <input type="submit" name="Submit">
             
+                <label for="email">Email</label>
+                <input placeholder="Your email" id="email" name="email" type="email" value="email" required>
+                
+                <label for="phone">Phone</label>
+                <input placeholder="Your phone number" id="phone" name="phone" type="tel">
+            
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Your message goes here..." rows="5" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </fieldset>
     </form>
     </section>
+    <footer>
+        <ul>
+        <li><a class="contactbtn" href="contact.html">Contact</a></li>
+        <li>&copy; All Rights Reserved 2024-2025</li>
+        </ul>
+</footer>
+
 </body>
 </html>

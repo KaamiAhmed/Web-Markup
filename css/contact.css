@@ -1,21 +1,186 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:5px 0;
+}
+
 form{
     display: flex;
-    flex-direction: column;
-    gap:1px;
-    margin-top:100px; 
     justify-content: center;
     align-items: center;
+    padding:20.9px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px;
+    width:60%;
+    background-color: #ccc;
+}
+
+fieldset{
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:40%;
 }
 
 legend{
+    margin-bottom: 30px;
+}
+
+label {
+    align-self:flex-start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom: 22px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    resize:none;
+}
+
+input[type="radio"], #gender {  
+    margin-right: 50px;
+}
+
+input:hover, textarea:hover{
+    border-color: #ff9914;
+}
+
+input:focus, textarea:focus{
+    border:2px solid #ff9914;
+    outline:none;
+}
+
+#gender{
     margin-bottom: 20px;
 }
 
-label, input{
-    display: flex;
-    width:400px;
+input[type="radio"] {
+    margin-bottom: 18px;
+    margin-left:8px;
+    cursor:pointer;
 }
 
-textarea{
-    width:300px;
+.gender{
+    cursor: pointer;
 }
+
+form section{
+    display: flex;
+    width:100%;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:10px;
+    background-color: #2274a5;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: #ff9914;
+    color:black;
+}
+
+footer{
+    height: 50px;
+    background-color:#2274A5;
+    color:white;
+    text-align:center;
+    line-height:50px;
+  }
+
+  footer ul{
+    display: flex;
+    width:55%;
+    margin-left: 12%;
+    justify-content: space-between;
+  }
+
+  footer ul li{
+    list-style-type:none;
+  }
+
+  footer a.contactbtn{
+    background-color: black;
+    padding:10px 20px;
+    border-radius: 10px;
+    color:white;
+    text-decoration: none;
+  }
+
+  footer a.contactbtn:hover{
+    background-color: #ff9914;
+    color:black;
+    font-weight: bold;
+  }
+
+  
+  @media (max-width:768px){
+   form{
+    width:80%;
+    padding:15px;
+   }
+
+   fieldset{
+    width:70%;
+   }
+
+   label{
+    font-size: 14px;
+   }
+   
+   input[type="text"], input[type="email"], input[type="tel"], textarea{
+    width:100%;
+    padding:8px;
+   }
+
+   input[type="submit"]{
+    width:100%;
+   }
+
+  }
+
+  @media (max-width:568px){
+    form{
+     width:95%;
+     padding:10px;
+    }
+ 
+    fieldset{
+     width:100%;
+    }
+
+    input[type="radio"], #gender {  
+        margin-right: 20px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"], textarea{
+     width:100%;
+     padding:5px;
+     margin-bottom: 15px;
+    }
+
+    input[type="radio"] {
+        margin-bottom: 19px;
+    }
+
+    input[type="submit"]{
+     padding:8px;
+    }
+    
+   }
